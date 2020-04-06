@@ -1,7 +1,7 @@
-name: Posthumous Position
+name: Posthumous-Position
 version: ${project.version}
 main: cmdrnorthpaw.posthumousposition.Main
-api-version: 1.13
+api-version: "1.13"
 prefix: Posthumous Position
 authors: [CmdrNorthpaw]
 description: Gives death coordinates upon respawn
