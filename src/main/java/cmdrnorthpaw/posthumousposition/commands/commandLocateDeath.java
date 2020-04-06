@@ -1,5 +1,6 @@
 package cmdrnorthpaw.posthumousposition.commands;
 
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -12,7 +13,12 @@ public class commandLocateDeath implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (sender instanceof Player) {
             Player player = (Player) sender;
-            player.sendMessage(playerDeaths.get(player.getName()));
+            if (playerDeaths.containsKey(player.getName())) {
+                player.sendMessage(playerDeaths.get(player.getName()));
+            }
+            else {
+                player.sendMessage(ChatColor.RED + "You haven't died yet on this server");
+            }
             return true;
         }
         else {
