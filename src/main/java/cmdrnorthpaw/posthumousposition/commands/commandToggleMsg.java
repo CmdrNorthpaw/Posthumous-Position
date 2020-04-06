@@ -10,7 +10,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class commandToggleMsg implements CommandExecutor {
-    Set<String> noMsgSet = new HashSet<>();
+    public static Set<String> noMsgSet = new HashSet<>();
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
