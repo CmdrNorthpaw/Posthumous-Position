@@ -19,10 +19,12 @@ public class commandToggleMsg implements CommandExecutor {
             if (!noMsgSet.contains(player.getName())) {
                 noMsgSet.add(player.getName());
                 player.sendMessage(ChatColor.RED + "You have disabled death messages");
+                return true;
             }
             else {
                 noMsgSet.remove(player.getName());
                 player.sendMessage(ChatColor.GREEN + "Death messages have been enabled");
+                return true;
             }
 
 

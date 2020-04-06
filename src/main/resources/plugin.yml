@@ -6,3 +6,10 @@ prefix: Posthumous Position
 authors: [CmdrNorthpaw]
 description: Gives death coordinates upon respawn
 website: https://github.com/CmdrNorthpaw/PosthumousPosition
+commands:
+  toggleDeathMsg:
+    description: Allows you to toggle the message you get upon death
+    usage: /toggleDeathMsg
+  locateDeath:
+    description: Allows you to get the location of your last death
+    usage: /locateDeath
